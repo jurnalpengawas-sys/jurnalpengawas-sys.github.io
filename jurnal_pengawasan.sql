@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS jurnal_pengawasan;
+USE jurnal_pengawasan;
+
+CREATE TABLE IF NOT EXISTS identitas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    nip VARCHAR(50) NOT NULL,
+    daerah VARCHAR(100) NOT NULL,
+    jumlah_sekolah INT NOT NULL,
+    foto VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
